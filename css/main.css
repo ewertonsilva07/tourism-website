@@ -2,12 +2,53 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0; }
-
-.test-paragraph {
   margin: 0;
-  font-size: 6rem;
-  color: white;
+  padding: 0; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-rows: repeat(3, minmax(6rem, auto)); }
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(2rem, 1fr));
+  grid-template-rows: repeat(2, minmax(5rem, max-content)); }
+  .header-img {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    height: 80vh;
+    background-color: #adadad; }
+
+.header-nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 10vh;
+  width: 100%;
   background-color: black;
-  padding: 4rem;
-  border-radius: 2rem; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-nav-list {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none; }
+
+.about-me {
+  grid-column: 1 / -1;
+  grid-row: 2 / 2;
+  height: 70vh;
+  background-color: #3131f7; }
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 3 / 3;
+  height: 30vh; }

@@ -1,0 +1,19 @@
+.header-nav{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-list {
+        width: 100%;
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        @include navigation;
+    }
+}

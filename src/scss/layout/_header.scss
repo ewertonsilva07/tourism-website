@@ -1,0 +1,15 @@
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(8,minmax(2rem, 1fr));
+    grid-template-rows: repeat(2, minmax(5rem, max-content));
+
+    &-img{
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+        height: 80vh;
+        background-color: #adadad;
+    }
+}
