@@ -1,6 +1,19 @@
 .about-me {
-    grid-column: 1 / -1;
+    grid-column: 2 / 12;
     grid-row: 2 / 2;
     height: 70vh;
-    background-color: #3131f7;
+    color: #181818;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title{
+        font-size: fontSize(xl);
+    }
+
+    &-paragraph {
+        font-size: fontSize(xs);
+        text-align: center;
+    }
 }

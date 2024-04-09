@@ -11,7 +11,7 @@
     &-list {
         width: 100%;
         color: white;
-        font-size: 2rem;
+        font-size: fontSize(md);
         margin: 0;
         padding: 0;
         @include navigation;

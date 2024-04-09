@@ -1,0 +1,16 @@
+.header-img{
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    height: 80vh;
+    background-color: #ffffff;
+    position: relative;
+
+    &-first{
+        position: absolute;
+        top: 0;
+        left: -430px;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+}
