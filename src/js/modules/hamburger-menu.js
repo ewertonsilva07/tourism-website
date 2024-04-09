@@ -10,11 +10,19 @@ export const hamburguerMenu = $(() => {
             if(isHidden){
                 navContainer.slideDown(500);
                 isHidden = false;
-                hamburgerIcon.css("position","fixed");
+                hamburgerIcon.css({
+                    "position":"fixed",
+                    "transform": "rotateZ(90deg)",               
+                    "transition":"all .8s"
+                })
             } else {
-                hamburgerIcon.prop("style", false);
                 navContainer.slideUp(500);
                 isHidden = true;
+                hamburgerIcon.css({
+                    "position":"absolute",
+                    "transform": "rotateZ(0deg)", 
+                    "transition":"all .8s"
+                });
             }
         // });
     })

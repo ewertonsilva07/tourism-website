@@ -3260,7 +3260,15 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
         n = t()(".menu");
       var r = !0;
       n.on("click", function () {
-        r ? (e.slideDown(500), r = !1, n.css("position", "fixed")) : (n.prop("style", !1), e.slideUp(500), r = !0);
+        r ? (e.slideDown(500), r = !1, n.css({
+          position: "fixed",
+          transform: "rotateZ(90deg)",
+          transition: "all .8s"
+        })) : (e.slideUp(500), r = !0, n.css({
+          position: "absolute",
+          transform: "rotateZ(0deg)",
+          transition: "all .8s"
+        }));
       });
     });
   }();
