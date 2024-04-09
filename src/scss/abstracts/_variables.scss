@@ -1,3 +1,12 @@
+$colors: (
+    primary: #FFF,
+    secondary: #000    
+);
+
+@function color($color) {
+    @return map-get($colors, $color);
+}
+
 $font-sizes: (
     xl: 4rem,
     lg: 2.5rem,
