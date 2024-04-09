@@ -18,6 +18,5 @@ export const gallerySlideShow = $(() => {
           $(this).attr("src", gallery[i]);
           $(this).fadeIn();
         })
-        console.log(galleryImage.attr("src"));
-      }, 4000);
+    }, 4000);
 })

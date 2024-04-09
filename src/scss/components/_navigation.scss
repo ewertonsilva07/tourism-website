@@ -1,19 +1,30 @@
+.nav-list-container{
+    position: fixed;
+    width: 100vw;
+    height: 95vh;
+    z-index: 280;
+    background-color: lighten(color(secondary), 20%);
+    display: none;
+}
+
+
 .header-nav{
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     height: 10vh;
     width: 100%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
     &-list {
-        width: 100%;
+        width: inherit;
+        height: inherit;
         color: white;
         font-size: fontSize(md);
         margin: 0;
         padding: 0;
-        @include navigation;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
