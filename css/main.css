@@ -100,7 +100,7 @@ body {
   .header-img-first {
     position: absolute;
     top: 0;
-    left: -430px;
-    width: inherit;
+    left: 0;
+    width: 100%;
     height: inherit;
     object-fit: cover; }

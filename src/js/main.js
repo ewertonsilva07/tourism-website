@@ -1,5 +1,5 @@
-import { gallerySlideShow } from './modules/header';
-import { hamburguerMenu } from './modules/hamburger-menu';
+import { gallerySlideShow } from './modules/slideShow';
+import { hamburguerMenu } from './modules/hamburgerMenu';
 
 
 hamburguerMenu;
