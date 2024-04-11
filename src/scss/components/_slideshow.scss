@@ -14,3 +14,29 @@
         object-fit: cover;
     }
 }
+
+.slideshow-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:inherit;
+    z-index: 100;
+    color: darken(color(primary), 10%);
+    background: linear-gradient(transparentize(color(secondary), 1), color(secondary));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-title{
+        font-size: fontSize(lg) + 2rem;
+        align-self: start;
+        margin-left: 20px;
+    }
+
+    &-paragraph {
+        font-size: fontSize(md);
+        margin: 0 20px 40px;
+    }
+}
