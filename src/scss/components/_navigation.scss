@@ -14,6 +14,14 @@
     height: 10vh;
     width: 100%;
     background-color: black;
+
+    &-logo {
+        color: color(primary);
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        font-size: fontSize(xl) + 1rem;
+    }
     
     &-list {
         width: inherit;
@@ -28,3 +36,4 @@
         text-align: center;
     }
 }
+

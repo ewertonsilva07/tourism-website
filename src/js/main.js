@@ -1,6 +1,6 @@
 import { gallerySlideShow } from './modules/slideShow';
-import { hamburguerMenu } from './modules/hamburgerMenu';
+import { toggleHamburgerMenu } from './modules/hamburgerMenu';
 
 
-hamburguerMenu;
+toggleHamburgerMenu;
 gallerySlideShow;

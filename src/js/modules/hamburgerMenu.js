@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-export const hamburguerMenu = $(() => {
+export const toggleHamburgerMenu = $(() => {
     const navContainer = $(".nav-list-container");
     const hamburgerIcon = $(".menu");
     let isHidden = true;
