@@ -98,6 +98,9 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center; }
+    @media (min-width: 760px) {
+      .header-nav-list {
+        display: block; } }
     .header-nav-list-item {
       margin: 1rem 0; }
 
@@ -128,6 +131,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end; }
+  @media (min-width: 760px) {
+    .slideshow-overlay {
+      align-items: flex-start; } }
   .slideshow-overlay-title {
     font-size: 4.5rem;
     align-self: start;

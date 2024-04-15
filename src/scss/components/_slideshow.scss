@@ -29,6 +29,10 @@
     align-items: center;
     justify-content: flex-end;
 
+    @include response(md) {
+        align-items: flex-start;
+    }
+
     &-title{
         font-size: fontSize(lg) + 2rem;
         align-self: start;
