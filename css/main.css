@@ -3,7 +3,9 @@ html {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; }
 
 .container {
   display: grid;
@@ -88,14 +90,16 @@ body {
   .header-nav-list {
     width: inherit;
     height: inherit;
-    color: white;
-    font-size: 2rem;
+    color: #e6e6e6;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center; }
+    .header-nav-list-item {
+      margin: 1rem 0; }
 
 .header-img {
   grid-column: 1 / -1;

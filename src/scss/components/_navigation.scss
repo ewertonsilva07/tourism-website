@@ -26,14 +26,18 @@
     &-list {
         width: inherit;
         height: inherit;
-        color: white;
-        font-size: fontSize(md);
+        color: darken(color(primary), 10);
+        font-size: fontSize(lg);
         margin: 0;
         padding: 0;
         display:flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+
+        &-item {
+            margin: 1rem 0;
+        }
     }
 }
 
