@@ -80,6 +80,11 @@ body {
   z-index: 280;
   background-color: #333333;
   display: none; }
+  @media (min-width: 760px) {
+    .nav-list-container {
+      width: 250px;
+      height: 400px;
+      right: 0; } }
 
 .header-nav {
   grid-column: 1 / -1;
@@ -103,7 +108,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    list-style: none; }
     .header-nav-list-item {
       margin: 1rem 0; }
 

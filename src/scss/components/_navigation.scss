@@ -5,6 +5,13 @@
     z-index: 280;
     background-color: lighten(color(secondary), 20%);
     display: none;
+
+    @include response(md) {
+        width: 250px;
+        height: 400px;
+        right: 0;
+    }
+
 }
 
 
@@ -34,6 +41,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        list-style: none;
 
         &-item {
             margin: 1rem 0;
