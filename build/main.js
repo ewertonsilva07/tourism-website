@@ -3251,13 +3251,23 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
         n = t()(".slideshow-overlay"),
         r = t()(".slideshow-overlay-title"),
         i = t()(".slideshow-overlay-paragraph"),
-        o = ["images/iskra-photography-paisagem1-md-unsplash.jpg", "images/bailey-zindel-paisagem2-md-unsplash.jpg", "images/mark-harpur-paisagem3-md-unsplash.jpg"],
-        a = ["Slide 1", "Slide 2", "Slide 3"],
-        s = ["Lorem ipsum dolor sit amet consectetur adipisicing elit.", "Fuga, molestias porro asperiores, modi dolor sed in, nihil tenetur adipisci aut dolore?", "Quibusdam culpa et quisquam corporis rem accusamus facilis debitis?"];
-      var u = 0;
+        o = [{
+          image: "images/iskra-photography-paisagem1-md-unsplash.jpg",
+          slideTitle: "Slide 1",
+          slideText: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }, {
+          image: "images/bailey-zindel-paisagem2-md-unsplash.jpg",
+          slideTitle: "Slide 2",
+          slideText: "Fuga, molestias porro asperiores, modi dolor sed in, nihil tenetur adipisci aut dolore?"
+        }, {
+          image: "images/mark-harpur-paisagem3-md-unsplash.jpg",
+          slideTitle: "Slide 3",
+          slideText: "Quibusdam culpa et quisquam corporis rem accusamus facilis debitis?"
+        }];
+      var a = 0;
       setInterval(function () {
-        u = (u + 1) % o.length, n.fadeOut(), r.fadeOut(), i.fadeOut(), e.fadeOut(function () {
-          t()(this).attr("src", o[u]), t()(this).fadeIn(), n.fadeIn(), r.text(a[u]).fadeIn(), i.text(s[u]).fadeIn();
+        a = (a + 1) % o.length, n.fadeOut(), r.fadeOut(), i.fadeOut(), e.fadeOut(function () {
+          t()(this).attr("src", o[a].image), t()(this).fadeIn(), n.fadeIn(), r.text(o[a].slideTitle).fadeIn(), i.text(o[a].slideText).fadeIn();
         });
       }, 4e3);
     }), t()(function () {

@@ -8,23 +8,23 @@ export const gallerySlideShow = $(() => {
     const overlayParagraph = $(".slideshow-overlay-paragraph");
     
     const gallery = [
-        'images/iskra-photography-paisagem1-md-unsplash.jpg',
-        'images/bailey-zindel-paisagem2-md-unsplash.jpg',
-        'images/mark-harpur-paisagem3-md-unsplash.jpg'
+        {
+            image: 'images/iskra-photography-paisagem1-md-unsplash.jpg', 
+            slideTitle: 'Slide 1',
+            slideText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        },
+        {
+            image: 'images/bailey-zindel-paisagem2-md-unsplash.jpg',
+            slideTitle:'Slide 2',
+            slideText:'Fuga, molestias porro asperiores, modi dolor sed in, nihil tenetur adipisci aut dolore?'
+        },
+        {
+            image: 'images/mark-harpur-paisagem3-md-unsplash.jpg',
+            slideTitle: 'Slide 3',
+            slideText: 'Quibusdam culpa et quisquam corporis rem accusamus facilis debitis?'
+        }
     ];
 
-    const overlayHeading = [
-        'Slide 1',
-        'Slide 2',
-        'Slide 3'
-    ];
-
-    const overlayText = [
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'Fuga, molestias porro asperiores, modi dolor sed in, nihil tenetur adipisci aut dolore?',
-        'Quibusdam culpa et quisquam corporis rem accusamus facilis debitis?'
-    ]
-    
     
     let i = 0;
     setInterval(function() {
@@ -33,11 +33,11 @@ export const gallerySlideShow = $(() => {
         overlayTitle.fadeOut();
         overlayParagraph.fadeOut();
         galleryImage.fadeOut(function(){
-          $(this).attr("src", gallery[i]);
+          $(this).attr("src", gallery[i].image);
           $(this).fadeIn();
           overlay.fadeIn();
-          overlayTitle.text(overlayHeading[i]).fadeIn();
-          overlayParagraph.text(overlayText[i]).fadeIn();
+          overlayTitle.text(gallery[i].slideTitle).fadeIn();
+          overlayParagraph.text(gallery[i].slideText).fadeIn();
         })
     }, 4000);
 
