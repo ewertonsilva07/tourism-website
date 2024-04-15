@@ -34,13 +34,21 @@
     }
 
     &-title{
-        font-size: fontSize(lg) + 2rem;
+        font-size: fontSize(xl);
         align-self: start;
         margin-left: 20px;
+
+        @include response(md) {
+            font-size: fontSize(xl) + 2rem;
+        }
     }
 
     &-paragraph {
         font-size: fontSize(md);
         margin: 0 20px 40px;
+
+        @include response(md) {
+            font-size: fontSize(lg);
+        }
     }
 }

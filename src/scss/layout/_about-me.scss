@@ -10,10 +10,18 @@
 
     &-title{
         font-size: fontSize(xl);
+
+        @include response(md) {
+            font-size: fontSize(xl) + 1rem;
+        }
     }
 
     &-paragraph {
         font-size: fontSize(xs);
         text-align: center;
+
+        @include response(md) {
+            font-size: fontSize(md);
+        }
     }
 }
