@@ -33,7 +33,6 @@
     &-list {
         width: inherit;
         height: inherit;
-        color: darken(color(primary), 10);
         font-size: fontSize(lg);
         margin: 0;
         padding: 0;
@@ -42,9 +41,20 @@
         justify-content: center;
         text-align: center;
         list-style: none;
+        
 
         &-item {
             margin: 1rem 0;
+            
+            a {
+                text-decoration: none;
+                color: darken(color(primary), 40);
+                transition: color .4s;
+
+                &:hover {
+                    color: lighten(color(primary), 60);
+                }
+            }
         }
     }
 }
