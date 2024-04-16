@@ -23,12 +23,14 @@ body {
 .about-us {
   grid-column: 2 / 12;
   grid-row: 2 / 2;
-  height: 70vh;
   color: #181818;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 1342px) {
+    .about-us {
+      height: 70vh; } }
   .about-us-title {
     font-size: 4rem; }
     @media (min-width: 760px) {
@@ -161,3 +163,29 @@ body {
     @media (min-width: 760px) {
       .slideshow-overlay-paragraph {
         font-size: 2.5rem; } }
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px; }
+  .team-img {
+    border-radius: 50%;
+    background-color: #b3b3b3; }
+  .team-img-1 {
+    height: 6rem;
+    width: 6rem;
+    transform: translate(15px, 0); }
+  .team-img-2 {
+    height: 10rem;
+    width: 10rem;
+    z-index: 10;
+    border: 3px solid #FFF; }
+    .team-img-2 img {
+      width: inherit;
+      height: inherit;
+      border-radius: inherit; }
+  .team-img-3 {
+    height: 6rem;
+    width: 6rem;
+    transform: translate(-15px, 0); }

@@ -1,0 +1,37 @@
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px;
+
+    &-img{
+        border-radius: 50%;
+        background-color: darken(color(primary), 30);
+    }
+
+    &-img-1 {
+        height: 6rem;
+        width: 6rem;
+        transform: translate(15px, 0);
+    };
+    
+    &-img-2{
+        height: 10rem;
+        width: 10rem;
+        z-index: 10;
+        border: 3px solid color(primary);
+
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+        }
+    }
+
+    &-img-3 {
+        height: 6rem;
+        width: 6rem;
+        transform: translate(-15px, 0);
+    };
+
+}

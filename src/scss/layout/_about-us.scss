@@ -1,12 +1,15 @@
 .about-us {
     grid-column: 2 / 12;
     grid-row: 2 / 2;
-    height: 70vh;
     color: #181818;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include response(xl) {
+        height: 70vh;
+    }
 
     &-title{
         font-size: fontSize(xl);
